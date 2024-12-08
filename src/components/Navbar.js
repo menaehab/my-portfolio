@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
+import { FaGithub, FaLinkedin, FaFacebook } from "react-icons/fa";
 
 const Navbar = () => {
   // State to manage the navbar's visibility
@@ -58,7 +59,54 @@ const Navbar = () => {
             {item.text}
           </li>
         ))}
+        <div className="text-secondary flex justify-center gap-4 text-2xl relative top-80">
+          <a
+            href="https://github.com/menaehab"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaGithub />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/mena-ehab-262a4b290/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaLinkedin />
+          </a>
+          <a
+            href="https://www.facebook.com/mena.ehab.9026/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaFacebook />
+          </a>
+        </div>
       </ul>
+      <div class="rounded-dashes"></div>
+      <div className="hero-social-media">
+        <a
+          href="https://github.com/menaehab"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaGithub />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/mena-ehab-262a4b290/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaLinkedin />
+        </a>
+        <a
+          href="https://www.facebook.com/mena.ehab.9026/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaFacebook />
+        </a>
+      </div>
     </div>
   );
 };

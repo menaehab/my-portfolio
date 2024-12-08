@@ -1,6 +1,5 @@
 import React from "react";
 import { CircleGrid } from "react-awesome-shapes";
-import { FaGithub, FaLinkedin, FaFacebook } from "react-icons/fa";
 import { motion } from "framer-motion";
 
 const fadeContainer = {
@@ -34,31 +33,7 @@ const fadeButton = {
 };
 function Hero() {
   return (
-    <div className="container mx-auto text-center h-[90vh] flex-col flex items-center justify-center">
-      <div class="rounded-dashes"></div>
-      <div className="hero-social-media">
-        <a
-          href="https://github.com/menaehab"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FaGithub />
-        </a>
-        <a
-          href="https://www.linkedin.com/in/mena-ehab-262a4b290/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FaLinkedin />
-        </a>
-        <a
-          href="https://www.facebook.com/mena.ehab.9026/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FaFacebook />
-        </a>
-      </div>
+    <div className="container mx-auto text-center h-[90vh] flex-col flex items-center justify-center mb-4">
       <CircleGrid
         className="animation-shape"
         position="absolute"
@@ -91,12 +66,11 @@ function Hero() {
           variants={fadeItem}
           className="text-secondary text-l mb-8 sm:text-2xl"
         >
-          a <span className="text-primary">Full-Stack</span> Developer
+          <span className="text-primary">Full-Stack</span> Developer
           specializing in <span className="text-primary">Laravel</span> and{" "}
           <span className="text-primary">React</span>
         </motion.h4>
       </motion.div>
-
       <CircleGrid
         className="animation-shape"
         position="absolute"

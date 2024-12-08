@@ -32,8 +32,18 @@
   width: 10vw;
   height: 10vw;
   min-width: 350px;
-  /* top: -128px; */
   right: 1vw;
+  border: 764px;
+  background-color: #fc0c13;
+  filter: blur(300px);
+  -webkit-filter: blur(300px);
+  z-index: 0;
+}
+.leftblur {
+  position: absolute;
+  width: 10vw;
+  height: 10vw;
+  min-width: 350px;
   border: 764px;
   background-color: #fc0c13;
   filter: blur(300px);
@@ -55,16 +65,17 @@
     -o-transform: translateY(0);
   }
   100% {
-    transform: translateY(10px);
-    -webkit-transform: translateY(10px);
-    -moz-transform: translateY(10px);
-    -ms-transform: translateY(10px);
-    -o-transform: translateY(10px);
+    transform: translateY(20px);
+    -webkit-transform: translateY(20px);
+    -moz-transform: translateY(20px);
+    -ms-transform: translateY(20px);
+    -o-transform: translateY(20px);
+    
   }
 }
 .rounded-dashes {
-  --s: 5px;    /* control the size */
-  --c: #ABB2BF; /* the color */
+  --s: 5px;
+  --c: #ABB2BF;
   position: absolute;
   left: 30px;
   top: 5px;
@@ -77,6 +88,8 @@
    radial-gradient(circle closest-side at bottom var(--_g)),   
    linear-gradient(#0000 25%,var(--c) 0 75%,#0000 0);
 }
+
+/* Hero section */
 .hero-social-media {
   position: absolute;
   display: flex;
@@ -93,4 +106,13 @@
 }
 .hero-social-media svg:hover {
   color: #fff;
+}
+
+@media (max-width: 768px) {
+  .rounded-dashes {
+    display: none;
+  }
+  .hero-social-media {
+    display: none;
+  }
 }
