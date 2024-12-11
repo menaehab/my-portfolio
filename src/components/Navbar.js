@@ -59,7 +59,7 @@ const Navbar = () => {
             {item.text}
           </li>
         ))}
-        <div className="text-secondary flex justify-center gap-4 text-2xl relative top-80">
+        <div className="text-secondary flex justify-center gap-4 text-2xl absolute bottom-8 left-0 w-full">
           <a
             href="https://github.com/menaehab"
             target="_blank"

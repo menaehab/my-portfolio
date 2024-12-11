@@ -45,6 +45,7 @@
   height: 10vw;
   min-width: 350px;
   border: 764px;
+  left:-200px;
   background-color: #fc0c13;
   filter: blur(300px);
   -webkit-filter: blur(300px);

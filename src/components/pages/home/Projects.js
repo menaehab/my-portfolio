@@ -44,7 +44,7 @@ function Projects() {
         {ProjectsItems.map((item) => (
           <div
             key={item.id}
-            className="max-w-sm border border-gray shadow mb-12"
+            className="max-w-sm border border-gray shadow mb-12 hover:translate-y-[-10px] transition duration-300 ease-in-out"
           >
             <p className="text-sm border-b-2 text-center border-secondary text-secondary p-2">
               {item.tech}
@@ -86,7 +86,7 @@ function Projects() {
         position="absolute"
         color="#ABB2BF"
         right="30px"
-        top="550px"
+        top="600px"
         size="100px"
         zIndex={2}
       />
