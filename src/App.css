@@ -1,7 +1,6 @@
 ::-webkit-scrollbar {
   width: 3px;
   background-color: #282c33;
-  
 }
 
 ::-webkit-scrollbar-track {
@@ -32,7 +31,7 @@
   width: 10vw;
   height: 10vw;
   min-width: 350px;
-  right: 1vw;
+  right: 0;
   border: 764px;
   background-color: #fc0c13;
   filter: blur(300px);
@@ -45,7 +44,7 @@
   height: 10vw;
   min-width: 350px;
   border: 764px;
-  left:-200px;
+  left: -200px;
   background-color: #fc0c13;
   filter: blur(300px);
   -webkit-filter: blur(300px);
@@ -71,23 +70,21 @@
     -moz-transform: translateY(20px);
     -ms-transform: translateY(20px);
     -o-transform: translateY(20px);
-    
   }
 }
 .rounded-dashes {
   --s: 5px;
-  --c: #ABB2BF;
+  --c: #abb2bf;
   position: absolute;
   left: 30px;
   top: 5px;
   width: var(--s);
   min-height: 250px;
-  --_g: var(--s) left 50%,var(--c) calc(100% - 1px),#0000;
-  background: 0/100% calc(4*var(--s)) no-repeat space;
-  background-image: 
-   radial-gradient(circle closest-side at top    var(--_g)),   
-   radial-gradient(circle closest-side at bottom var(--_g)),   
-   linear-gradient(#0000 25%,var(--c) 0 75%,#0000 0);
+  --_g: var(--s) left 50%, var(--c) calc(100% - 1px), #0000;
+  background: 0/100% calc(4 * var(--s)) no-repeat space;
+  background-image: radial-gradient(circle closest-side at top var(--_g)),
+    radial-gradient(circle closest-side at bottom var(--_g)),
+    linear-gradient(#0000 25%, var(--c) 0 75%, #0000 0);
 }
 
 /* Hero section */
@@ -101,7 +98,7 @@
 
 .hero-social-media svg {
   font-size: 1.5rem;
-  color: #ABB2BF;
+  color: #abb2bf;
   margin-top: 15px;
   transition: 0.5s;
 }

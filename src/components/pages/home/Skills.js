@@ -29,7 +29,7 @@ function Skills() {
       <div className="border-y border-l border-primary w-16 h-28 absolute hidden md:block right-0 top-[110%]"></div>
       <div className="projects-title mb-20">
         <h1 className="text-white text-4xl flex items-center">
-          <span className="text-primary">#</span>My Skills
+          <span className="text-primary">#</span>My-Skills
           <hr className="w-1/3 h-1 ml-4 border-3  border-primary hidden md:block" />
         </h1>
       </div>
@@ -108,9 +108,8 @@ function Skills() {
                 </h5>
               </h3>
               <p className="mb-3 font-normal text-gray-700 px-2 dark:text-gray-400 text-center">
-                <span className="flex flex-wrap justify-center">
-                  HTML CSS EJS
-                </span>
+                <span className="flex flex-wrap justify-center">HTML CSS</span>
+                <span className="flex flex-wrap justify-center">EJS</span>
                 <span className="flex flex-wrap justify-center">
                   Git Github
                 </span>

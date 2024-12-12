@@ -90,6 +90,15 @@ function Projects() {
         size="100px"
         zIndex={2}
       />
+      <CircleGrid
+        className="animation-shape hidden md:block"
+        position="absolute"
+        color="#ABB2BF"
+        right="30px"
+        top="1000px"
+        size="100px"
+        zIndex={2}
+      />
       <div className="flex justify-center">
         <Link className="text-white px-6 py-3 border border-primary hover:bg-primary transition duration-300 ease-in-out">
           View All
