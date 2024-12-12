@@ -91,7 +91,7 @@ function Projects() {
         zIndex={2}
       />
       <CircleGrid
-        className="animation-shape hidden md:block"
+        className="animation-shape hidden min1650:block"
         position="absolute"
         color="#ABB2BF"
         right="30px"

@@ -30,7 +30,7 @@ function Skills() {
       <div className="projects-title mb-20">
         <h1 className="text-white text-4xl flex items-center">
           <span className="text-primary">#</span>My-Skills
-          <hr className="w-1/3 h-1 ml-4 border-3  border-primary hidden md:block" />
+          <hr className="w-[30%] h-1 ml-4 border-3  border-primary hidden md:block" />
         </h1>
       </div>
       <div class="hidden lg:grid lg:grid-cols-2 lg:gap-4">

@@ -6,10 +6,10 @@ import "../../../App.css";
 function About() {
   const codeString = `<?php
 
-    $name = "Mina Ehab";
+    $name = "Mena Ehab";
     $age = 19;
-    $frameworks = ["Laravel", "Jetstream", "Django", "React"];
     $education = "CS student at South Valley National University";
+    $availability = true; // full_time || part_time
     $skills = [
         "Languages" => ["C", "C++", "PHP", "JavaScript", "Python"],
         "Backend development" => ["Laravel", "Django"],
@@ -76,14 +76,14 @@ function About() {
             to improve my coding skills and contribute to the{" "}
             <strong>ICPC</strong> community.
           </p>
-          <div className="border border-primary w-16 h-28 absolute hidden md:block red-sqaure top-[220%] left-[-10px]"></div>
+          <div className="border border-primary w-16 h-28 absolute hidden  red-sqaure top-[220%] left-[-10px]  min1650:block"></div>
           <Link
             to="/"
             className="inline-flex items-center px-3 py-2 text-xl curosr font-medium text-center text-white border-2 border-primary hover:bg-primary transition duration-300 ease-in-out"
           >
             Read More
             <svg
-              className="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+              className="rtl:rotate-180 w-5 h-5 ms-2"
               aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -99,8 +99,8 @@ function About() {
             </svg>
           </Link>
         </div>
-        <div className="border-y border-l border-primary w-16 h-28 absolute hidden md:block right-0 top-[260%]"></div>
-        <div className="w-full lg:w-1/2 text-sm md:text-md hidden md:block">
+        <div className="border-y border-l border-primary w-16 h-28 absolute hidden right-0 top-[260%] min1650:block"></div>
+        <div className="w-full lg:w-1/2 text-sm md:text-md hidden md:block border border-primary rounded shadow-md shadow-primary">
           <SyntaxHighlighter
             language="php"
             style={github}

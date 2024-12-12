@@ -64,7 +64,7 @@ function Hero() {
         </motion.h1>
         <motion.h4
           variants={fadeItem}
-          className="text-secondary text-l mb-8 sm:text-2xl"
+          className="text-secondary text-lg mb-8 sm:text-2xl"
         >
           <span className="text-primary">Full-Stack</span> Developer
           specializing in <span className="text-primary">Laravel</span> and{" "}
