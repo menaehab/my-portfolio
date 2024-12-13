@@ -78,8 +78,8 @@ function About() {
           </p>
           <div className="border border-primary w-16 h-28 absolute hidden  red-sqaure top-[220%] left-[-10px]  min1650:block"></div>
           <Link
-            to="/"
-            className="inline-flex items-center px-3 py-2 text-xl curosr font-medium text-center text-white border-2 border-primary hover:bg-primary transition duration-300 ease-in-out"
+            to="/about"
+            className="inline-flex items-center px-3 py-2 text-xl font-medium text-white border-2 border-primary hover:bg-primary transition duration-300 ease-in-out cursor-pointer"
           >
             Read More
             <svg

@@ -100,7 +100,10 @@ function Projects() {
         zIndex={2}
       />
       <div className="flex justify-center">
-        <Link className="text-white px-6 py-3 border border-primary hover:bg-primary transition duration-300 ease-in-out">
+        <Link
+          to="/project"
+          className="text-white px-6 py-3 border border-primary hover:bg-primary transition duration-300 ease-in-out"
+        >
           View All
         </Link>
       </div>

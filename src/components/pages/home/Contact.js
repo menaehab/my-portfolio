@@ -5,7 +5,7 @@ import { CircleGrid } from "react-awesome-shapes/dist/shapes/circlegrid";
 
 function Contact() {
   return (
-    <div className="container mx-auto px-4 mb-20 relative">
+    <div className="container mx-auto px-4 mb-56 relative">
       <div className="projects-title mb-20">
         <h1 className="text-white text-4xl flex items-center">
           <span className="text-primary">#</span>Contact

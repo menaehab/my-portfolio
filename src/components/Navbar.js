@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import { FaGithub, FaLinkedin, FaFacebook } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   // State to manage the navbar's visibility
@@ -12,10 +13,10 @@ const Navbar = () => {
   };
 
   const navItems = [
-    { id: 1, text: "Home" },
-    { id: 2, text: "works" },
-    { id: 3, text: "about" },
-    { id: 4, text: "contact" }
+    { id: 1, text: "Home", link: "/" },
+    { id: 2, text: "works", link: "/project" },
+    { id: 3, text: "about", link: "/about" },
+    { id: 4, text: "contact", link: "/contact" }
   ];
 
   return (
@@ -25,13 +26,15 @@ const Navbar = () => {
       {/* Desktop Navigation */}
       <ul className="hidden md:flex">
         {navItems.map((item) => (
-          <li
-            key={item.id}
-            className="p-4 text-secondary m-1 cursor-pointer duration-300 hover:text-white"
-          >
-            <span className="text-primary mr-1">#</span>
-            {item.text}
-          </li>
+          <Link to={item.link}>
+            <li
+              key={item.id}
+              className="p-4 text-secondary m-1 cursor-pointer duration-300 hover:text-white"
+            >
+              <span className="text-primary mr-1">#</span>
+              {item.text}
+            </li>
+          </Link>
         ))}
       </ul>
 
@@ -51,13 +54,15 @@ const Navbar = () => {
         <h1 className="w-full text-3xl font-bold text-primary m-4">MENA</h1>
         {/* Mobile Navigation Items */}
         {navItems.map((item) => (
-          <li
-            key={item.id}
-            className="p-4 text-secondary duration-300 hover:text-white cursor-pointer"
-          >
-            <span className="text-primary mr-1">#</span>
-            {item.text}
-          </li>
+          <Link to={item.link}>
+            <li
+              key={item.id}
+              className="p-4 text-secondary duration-300 hover:text-white cursor-pointer"
+            >
+              <span className="text-primary mr-1">#</span>
+              {item.text}
+            </li>
+          </Link>
         ))}
         <div className="text-secondary flex justify-center gap-4 text-2xl absolute bottom-8 left-0 w-full">
           <a
