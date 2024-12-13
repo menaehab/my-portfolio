@@ -1,22 +1,42 @@
 import React, { useState } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import { FaGithub, FaLinkedin, FaFacebook } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { Link as RouterLink, useNavigate, useLocation } from "react-router-dom";
+import { scroller } from "react-scroll";
 
 const Navbar = () => {
-  // State to manage the navbar's visibility
   const [nav, setNav] = useState(false);
+  const navigate = useNavigate();
+  const location = useLocation();
 
-  // Toggle function to handle the navbar's display
   const handleNav = () => {
     setNav(!nav);
+  };
+
+  const scrollToSection = (section) => {
+    if (location.pathname !== "/") {
+      navigate("/");
+      setTimeout(() => {
+        scroller.scrollTo(section, {
+          smooth: true,
+          duration: 500,
+          offset: -50
+        });
+      }, 100);
+    } else {
+      scroller.scrollTo(section, {
+        smooth: true,
+        duration: 500,
+        offset: -50
+      });
+    }
   };
 
   const navItems = [
     { id: 1, text: "Home", link: "/" },
     { id: 2, text: "works", link: "/project" },
     { id: 3, text: "about", link: "/about" },
-    { id: 4, text: "contact", link: "/contact" }
+    { id: 4, text: "contact", link: "#contact" }
   ];
 
   return (
@@ -25,23 +45,32 @@ const Navbar = () => {
 
       {/* Desktop Navigation */}
       <ul className="hidden md:flex">
-        {navItems.map((item) => (
-          <Link to={item.link}>
+        {navItems.map((item) =>
+          item.link.startsWith("#") ? (
             <li
               key={item.id}
+              onClick={() => scrollToSection(item.link.substring(1))}
               className="p-4 text-secondary m-1 cursor-pointer duration-300 hover:text-white"
             >
               <span className="text-primary mr-1">#</span>
               {item.text}
             </li>
-          </Link>
-        ))}
+          ) : (
+            <RouterLink to={item.link} key={item.id}>
+              <li className="p-4 text-secondary m-1 cursor-pointer duration-300 hover:text-white">
+                <span className="text-primary mr-1">#</span>
+                {item.text}
+              </li>
+            </RouterLink>
+          )
+        )}
       </ul>
 
       {/* Mobile Navigation Icon */}
       <div onClick={handleNav} className="block md:hidden">
         {nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
       </div>
+
       {/* Mobile Navigation Menu */}
       <ul
         className={`${
@@ -50,20 +79,34 @@ const Navbar = () => {
             : "ease-in-out w-[60%] duration-500 fixed top-0 bottom-0 left-[-100%]"
         }`}
       >
-        {/* Mobile Logo */}
         <h1 className="w-full text-3xl font-bold text-primary m-4">MENA</h1>
-        {/* Mobile Navigation Items */}
-        {navItems.map((item) => (
-          <Link to={item.link}>
+        {navItems.map((item) =>
+          item.link.startsWith("#") ? (
             <li
               key={item.id}
+              onClick={() => {
+                setNav(false);
+                scrollToSection(item.link.substring(1));
+              }}
               className="p-4 text-secondary duration-300 hover:text-white cursor-pointer"
             >
               <span className="text-primary mr-1">#</span>
               {item.text}
             </li>
-          </Link>
-        ))}
+          ) : (
+            <RouterLink
+              to={item.link}
+              key={item.id}
+              onClick={() => setNav(false)}
+            >
+              <li className="p-4 text-secondary duration-300 hover:text-white cursor-pointer">
+                <span className="text-primary mr-1">#</span>
+                {item.text}
+              </li>
+            </RouterLink>
+          )
+        )}
+
         <div className="text-secondary flex justify-center gap-4 text-2xl absolute bottom-8 left-0 w-full">
           <a
             href="https://github.com/menaehab"
@@ -88,30 +131,6 @@ const Navbar = () => {
           </a>
         </div>
       </ul>
-      <div class="rounded-dashes"></div>
-      <div className="hero-social-media">
-        <a
-          href="https://github.com/menaehab"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FaGithub />
-        </a>
-        <a
-          href="https://www.linkedin.com/in/mena-ehab-262a4b290/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FaLinkedin />
-        </a>
-        <a
-          href="https://www.facebook.com/mena.ehab.9026/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FaFacebook />
-        </a>
-      </div>
     </div>
   );
 };
