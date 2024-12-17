@@ -16,6 +16,7 @@ function Footer() {
             </h3>
             <div className="text-secondary flex justify-center gap-4 text-2xl ">
               <a
+                className="hover:text-white transition duration-300 ease-in-out"
                 href="https://github.com/menaehab"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -23,6 +24,7 @@ function Footer() {
                 <FaGithub />
               </a>
               <a
+                className="hover:text-white transition duration-300 ease-in-out"
                 href="https://www.linkedin.com/in/mena-ehab-262a4b290/"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -30,6 +32,7 @@ function Footer() {
                 <FaLinkedin />
               </a>
               <a
+                className="hover:text-white transition duration-300 ease-in-out"
                 href="https://www.facebook.com/mena.ehab.9026/"
                 target="_blank"
                 rel="noopener noreferrer"

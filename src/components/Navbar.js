@@ -131,6 +131,30 @@ const Navbar = () => {
           </a>
         </div>
       </ul>
+      <div class="rounded-dashes"></div>
+      <div className="hero-social-media">
+        <a
+          href="https://github.com/menaehab"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaGithub />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/mena-ehab-262a4b290/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaLinkedin />
+        </a>
+        <a
+          href="https://www.facebook.com/mena.ehab.9026/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaFacebook />
+        </a>
+      </div>
     </div>
   );
 };

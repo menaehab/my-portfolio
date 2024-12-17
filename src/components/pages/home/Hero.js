@@ -1,6 +1,7 @@
 import React from "react";
 import { CircleGrid } from "react-awesome-shapes";
 import { motion } from "framer-motion";
+import { Link } from "react-scroll";
 
 const fadeContainer = {
   hidden: { opacity: 0 },
@@ -33,7 +34,7 @@ const fadeButton = {
 };
 function Hero() {
   return (
-    <div className="container mx-auto text-center h-[90vh] flex-col flex items-center justify-center mb-4">
+    <div className="max-w-[1240px] px-4 mx-auto text-center h-[90vh] flex-col flex items-center justify-center mb-4">
       <CircleGrid
         className="animation-shape"
         position="absolute"
@@ -89,10 +90,17 @@ function Hero() {
       >
         <motion.a
           variants={fadeButton}
-          href="#"
-          className="px-8 py-3 text-white bg-dark border hover:bg-primary border-primary transition duration-300 ease-in-out"
+          className="px-8 py-3 text-white bg-dark border hover:bg-primary border-primary transition duration-300 ease-in-out cursor-pointer"
         >
-          Contact Me!!
+          <Link
+            to="contact"
+            smooth={true}
+            duration={500}
+            spy={true}
+            offset={-70}
+          >
+            Contact Me!!
+          </Link>
         </motion.a>
       </motion.div>
     </div>

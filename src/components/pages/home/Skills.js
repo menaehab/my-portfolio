@@ -3,7 +3,7 @@ import React from "react";
 const skills = [
   {
     category: "Languages",
-    items: ["C C++", "PHP", "Python", "Java-Script"]
+    items: ["C C++", "PHP", "Python", "JS"]
   },
   {
     category: "Back-End",
@@ -25,7 +25,7 @@ const skills = [
 
 function Skills() {
   return (
-    <div className="container mx-auto px-4 mb-20">
+    <div className="max-w-[1240px] mx-auto px-4 mb-20">
       <div className="border-y border-l border-primary w-16 h-28 absolute hidden md:block right-0 top-[110%]"></div>
       <div className="projects-title mb-20">
         <h1 className="text-white text-4xl flex items-center">
@@ -33,6 +33,7 @@ function Skills() {
           <hr className="w-[30%] h-1 ml-4 border-3  border-primary hidden md:block" />
         </h1>
       </div>
+      <div className="border-y border-l border-primary w-16 h-28 absolute right-0 top-[190%] hidden md:block"></div>
       <div class="hidden lg:grid lg:grid-cols-2 lg:gap-4">
         <div className="relative">
           <div className="absolute top-10 left-[32%] w-20 h-20 border border-white hover:bg-white transition duration-300 ease-in-out"></div>
@@ -52,9 +53,7 @@ function Skills() {
               </h3>
               <p className="mb-3 font-normal text-gray-700 px-2 dark:text-gray-400 text-center">
                 <span className="flex flex-wrap justify-center">C C++ PHP</span>
-                <span className="flex flex-wrap justify-center">
-                  Python Java-Script
-                </span>
+                <span className="flex flex-wrap justify-center">Python JS</span>
               </p>
             </div>
           </div>

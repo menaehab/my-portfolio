@@ -12,8 +12,8 @@ function About() {
     $availability = true; // full_time || part_time
     $skills = [
         "Languages" => ["C", "C++", "PHP", "JavaScript", "Python"],
-        "Backend development" => ["Laravel", "Django"],
-        "Frontend development" => ["Bootstrap", "Tailwind", "React"],
+        "Back-End" => ["Laravel", "Django"],
+        "Front-End" => ["Bootstrap", "Tailwind", "React"],
     ];
 
 ?>`;
@@ -41,7 +41,7 @@ function About() {
   }, [index, codeString, time]);
 
   return (
-    <div className="container mx-auto px-4 mb-20">
+    <div className="max-w-[1240px] mx-auto px-4 mb-20">
       <div className="border-y border-l border-primary w-16 h-28 absolute hidden md:block right-0 top-[110%]"></div>
       <div className="projects-title mb-20">
         <h1 className="text-white text-4xl flex items-center">
@@ -76,7 +76,7 @@ function About() {
             to improve my coding skills and contribute to the{" "}
             <strong>ICPC</strong> community.
           </p>
-          <div className="border border-primary w-16 h-28 absolute hidden  red-sqaure top-[220%] left-[-10px]  min1650:block"></div>
+          <div className="border border-primary w-16 h-28 absolute red-sqaure top-[220%] left-[-10px] hidden md:block"></div>
           <Link
             to="/about"
             className="inline-flex items-center px-3 py-2 text-xl font-medium text-white border-2 border-primary hover:bg-primary transition duration-300 ease-in-out cursor-pointer"
@@ -99,7 +99,7 @@ function About() {
             </svg>
           </Link>
         </div>
-        <div className="border-y border-l border-primary w-16 h-28 absolute hidden right-0 top-[260%] min1650:block"></div>
+        <div className="border-y border-l border-primary w-16 h-28 absolute right-0 top-[260%] hidden md:block"></div>
         <div className="w-full lg:w-1/2 text-sm md:text-md hidden md:block border border-primary rounded shadow-md shadow-primary">
           <SyntaxHighlighter
             language="php"
@@ -108,7 +108,7 @@ function About() {
               lineHeight: "1.8",
               borderRadius: "8px",
               backgroundColor: "#000000",
-              height: "350px"
+              height: "360px"
             }}
             wrapLongLines={true}
             lineProps={{
