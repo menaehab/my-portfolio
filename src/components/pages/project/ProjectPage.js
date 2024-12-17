@@ -2,6 +2,7 @@ import React from "react";
 import Card from "../../Card";
 import { Link } from "react-router-dom";
 import { CircleGrid } from "react-awesome-shapes/dist/shapes/circlegrid";
+
 const completedProjects = [
   {
     id: 1,
@@ -171,7 +172,6 @@ function Work() {
         ))}
       </div>
       <div className="border border-primary w-16 h-28 absolute hidden md:block red-sqaure top-[80%] left-[-10px]"></div>
-
       <div className="my-16">
         <div className="text-white text-4xl">
           <span className="text-primary">#</span>teamwork-projects
@@ -199,6 +199,15 @@ function Work() {
           <hr className="w-[20%] h-1 ml-4 border-3 border-primary hidden md:block" />
         </h1>
         <div className="leftblur"></div>
+        <CircleGrid
+          className="animation-shape"
+          position="absolute"
+          left="40px"
+          top="1200px"
+          color="#ABB2BF"
+          size="125px"
+          zIndex={2}
+        />
         <div className="flex justify-center">
           <Link
             className="inline-flex items-center border-2 py-2 px-4 text-xl text-white border-primary hover:bg-primary transition duration-300 ease-in-out"

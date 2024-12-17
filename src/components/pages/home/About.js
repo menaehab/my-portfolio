@@ -2,7 +2,6 @@ import { React, useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import SyntaxHighlighter from "react-syntax-highlighter";
 import { github } from "react-syntax-highlighter/dist/esm/styles/hljs";
-import "../../../App.css";
 function About() {
   const codeString = `<?php
 
@@ -11,7 +10,7 @@ function About() {
     $education = "CS student at South Valley National University";
     $availability = true; // full_time || part_time
     $skills = [
-        "Languages" => ["C", "C++", "PHP", "JavaScript", "Python"],
+        "Languages" => ["C", "C++", "PHP", "JS", "Python"],
         "Back-End" => ["Laravel", "Django"],
         "Front-End" => ["Bootstrap", "Tailwind", "React"],
     ];
