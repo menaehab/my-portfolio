@@ -2,7 +2,6 @@ import { React, useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import SyntaxHighlighter from "react-syntax-highlighter";
 import { github } from "react-syntax-highlighter/dist/esm/styles/hljs";
-import Skills from "../home/Skills";
 function AboutPage() {
   const codeString = `<?php
   
