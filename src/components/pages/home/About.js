@@ -1,5 +1,4 @@
 import { React, useState, useEffect } from "react";
-import { Link } from "react-router-dom";
 import SyntaxHighlighter from "react-syntax-highlighter";
 import { github } from "react-syntax-highlighter/dist/esm/styles/hljs";
 function About() {
@@ -76,11 +75,12 @@ function About() {
             <strong>ICPC</strong> community.
           </p>
           <div className="border border-primary w-16 h-28 absolute red-sqaure top-[220%] left-[-10px] hidden md:block"></div>
-          <Link
-            to="/about"
+          <a
+            href="mena_ehab.pdf"
+            download="mena_ehab_cv.pdf"
             className="inline-flex items-center px-3 py-2 text-xl font-medium text-white border-2 border-primary hover:bg-primary transition duration-300 ease-in-out cursor-pointer"
           >
-            Read More
+            Download CV
             <svg
               className="rtl:rotate-180 w-5 h-5 ms-2"
               aria-hidden="true"
@@ -96,7 +96,7 @@ function About() {
                 d="M1 5h12m0 0L9 1m4 4L9 9"
               />
             </svg>
-          </Link>
+          </a>
         </div>
         <div className="border-y border-l border-primary w-16 h-28 absolute right-0 top-[260%] hidden md:block"></div>
         <div className="w-full lg:w-1/2 text-sm md:text-md hidden md:block border border-primary rounded shadow-md shadow-primary">

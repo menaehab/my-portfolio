@@ -35,8 +35,7 @@ const Navbar = () => {
   const navItems = [
     { id: 1, text: "Home", link: "/" },
     { id: 2, text: "works", link: "/project" },
-    { id: 3, text: "about", link: "/about" },
-    { id: 4, text: "contact", link: "#contact" }
+    { id: 3, text: "contact", link: "#contact" }
   ];
 
   return (

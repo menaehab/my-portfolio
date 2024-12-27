@@ -39,7 +39,7 @@ function Contact() {
           position="absolute"
           color="#ABB2BF"
           right="40px"
-          top="0px"
+          top="-10px"
           size="100px"
           zIndex={2}
         />
