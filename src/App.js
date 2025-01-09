@@ -4,6 +4,7 @@ import Footer from "./components/Footer";
 import "./App.css";
 import Navbar from "./components/Navbar";
 import ProjectPage from "./components/pages/project/ProjectPage";
+import NotFound from "./components/pages/NotFound";
 function App() {
   return (
     <div className="app bg-dark">
@@ -12,6 +13,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/project" element={<ProjectPage />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer />
       </BrowserRouter>
