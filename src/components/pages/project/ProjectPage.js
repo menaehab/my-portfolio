@@ -1,121 +1,124 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Card from "../../Card";
 import { Link } from "react-router-dom";
 import { CircleGrid } from "react-awesome-shapes/dist/shapes/circlegrid";
 
-const completedProjects = [
-  {
-    id: 1,
-    name: "Job Board",
-    tech: "Laravel PHP JS MySQl",
-    description:
-      "A platform enabling employers to post jobs and candidates to apply seamlessly",
-    link: "https://github.com/menaehab/Job-board"
-  },
-  {
-    id: 2,
-    name: "Blog Platform",
-    tech: "Laravel PHP MySQl",
-    description:
-      "A dynamic platform for creating, sharing, and exploring engaging blog posts effortlessly",
-    link: "https://github.com/menaehab/blog-app"
-  },
-  {
-    id: 3,
-    name: "portfolio",
-    tech: "js React Tailwind",
-    description:
-      "Modern portfolio built with React and Tailwind, showcasing creativity effectively",
-    link: "https://github.com/menaehab/my-portfolio"
-  },
-  {
-    id: 4,
-    name: "communication platform",
-    tech: "Python Django SQLite3",
-    description:
-      "Dynamic communication platform using Django, enabling chat rooms and blog sharing seamlessly",
-    link: "https://github.com/menaehab/communication-platform"
-  },
-  {
-    id: 5,
-    name: "library system",
-    tech: "Python Django SQLite3",
-    description:
-      "Comprehensive library system managing books, users, lending, and returns efficiently with ease",
-    link: "https://github.com/menaehab/library-system"
-  }
-];
-
-const smallProjects = [
-  {
-    id: 1,
-    name: "Food Delivery",
-    tech: "js React Bootstrap",
-    description:
-      "Food delivery app built with React and Bootstrap connecting customers with restaurant for quick, delicious meals",
-    link: "https://github.com/menaehab/Food-Delivery"
-  },
-  {
-    id: 2,
-    name: "Company Portfolio",
-    tech: "JS React Bootstrap",
-    description:
-      "Building innovative, user-friendly React applications for exceptional digital experiences and business",
-    link: "https://github.com/menaehab/business-co"
-  },
-  {
-    id: 3,
-    name: "basic ecommerce",
-    tech: "js React Bootstrap",
-    description:
-      "Basic e-commerce platform built with React, Redux, and Bootstrap for seamless shopping experience.",
-    link: "https://github.com/menaehab/basic-ecommerce"
-  },
-  {
-    id: 4,
-    name: "certificates generator",
-    tech: "HTML CSS PHP Boostrap",
-    description:
-      "Certificate generator built with HTML, CSS, PHP, and Bootstrap for customizable certificate creation",
-    link: "https://github.com/menaehab/certificates-generator"
-  },
-  {
-    id: 5,
-    name: "Recipes app",
-    tech: "HTML CSS JS",
-    description:
-      "Recipe app built with HTML, CSS, Bootstrap, JS, API integration for interactive recipe browsing",
-    link: "https://github.com/menaehab/library-system"
-  },
-  {
-    id: 6,
-    name: "company website",
-    tech: "PHP Laravel Mysql",
-    description:
-      "Company website with a Laravel-powered admin dashboard with multi language support",
-    link: "https://github.com/menaehab/library-system"
-  }
-];
-
-const teamProjects = [
-  {
-    id: 1,
-    name: "simple portfolio",
-    tech: "JS React Bootstrap",
-    description:
-      "Collaborative portfolio project built with React and Bootstrap, showcasing creativity and teamwork effectively",
-    link: "https://github.com/menaehab/React-simple-portfolio"
-  },
-  {
-    id: 2,
-    name: "E-commerce",
-    tech: "HTML CSS JS Bootstrap",
-    description:
-      "Collaborative e-commerce project crafted with HTML, CSS, JavaScript, and Bootstrap",
-    link: "https://github.com/menaehab/e-commerce"
-  }
-];
 function Work() {
+  const completedProjects = [
+    {
+      id: 1,
+      name: "Job Board",
+      tech: "Laravel PHP JS MySQl",
+      description:
+        "A platform enabling employers to post jobs and candidates to apply seamlessly",
+      link: "https://github.com/menaehab/Job-board"
+    },
+    {
+      id: 2,
+      name: "Blog Platform",
+      tech: "Laravel PHP MySQl",
+      description:
+        "A dynamic platform for creating, sharing, and exploring engaging blog posts effortlessly",
+      link: "https://github.com/menaehab/blog-app"
+    },
+    {
+      id: 3,
+      name: "portfolio",
+      tech: "js React Tailwind",
+      description:
+        "Modern portfolio built with React and Tailwind, showcasing creativity effectively",
+      link: "https://github.com/menaehab/my-portfolio"
+    },
+    {
+      id: 4,
+      name: "communication platform",
+      tech: "Python Django SQLite3",
+      description:
+        "Dynamic communication platform using Django, enabling chat rooms and blog sharing seamlessly",
+      link: "https://github.com/menaehab/communication-platform"
+    },
+    {
+      id: 5,
+      name: "library system",
+      tech: "Python Django SQLite3",
+      description:
+        "Comprehensive library system managing books, users, lending, and returns efficiently with ease",
+      link: "https://github.com/menaehab/library-system"
+    }
+  ];
+
+  const smallProjects = [
+    {
+      id: 1,
+      name: "Food Delivery",
+      tech: "js React Bootstrap",
+      description:
+        "Food delivery app built with React and Bootstrap connecting customers with restaurant for quick, delicious meals",
+      link: "https://github.com/menaehab/Food-Delivery"
+    },
+    {
+      id: 2,
+      name: "Company Portfolio",
+      tech: "JS React Bootstrap",
+      description:
+        "Building innovative, user-friendly React applications for exceptional digital experiences and business",
+      link: "https://github.com/menaehab/business-co"
+    },
+    {
+      id: 3,
+      name: "basic ecommerce",
+      tech: "js React Bootstrap",
+      description:
+        "Basic e-commerce platform built with React, Redux, and Bootstrap for seamless shopping experience.",
+      link: "https://github.com/menaehab/basic-ecommerce"
+    },
+    {
+      id: 4,
+      name: "certificates generator",
+      tech: "HTML CSS PHP Boostrap",
+      description:
+        "Certificate generator built with HTML, CSS, PHP, and Bootstrap for customizable certificate creation",
+      link: "https://github.com/menaehab/certificates-generator"
+    },
+    {
+      id: 5,
+      name: "Recipes app",
+      tech: "HTML CSS JS",
+      description:
+        "Recipe app built with HTML, CSS, Bootstrap, JS, API integration for interactive recipe browsing",
+      link: "https://github.com/menaehab/library-system"
+    },
+    {
+      id: 6,
+      name: "company website",
+      tech: "PHP Laravel Mysql",
+      description:
+        "Company website with a Laravel-powered admin dashboard with multi language support",
+      link: "https://github.com/menaehab/library-system"
+    }
+  ];
+
+  const teamProjects = [
+    {
+      id: 1,
+      name: "simple portfolio",
+      tech: "JS React Bootstrap",
+      description:
+        "Collaborative portfolio project built with React and Bootstrap, showcasing creativity and teamwork effectively",
+      link: "https://github.com/menaehab/React-simple-portfolio"
+    },
+    {
+      id: 2,
+      name: "E-commerce",
+      tech: "HTML CSS JS Bootstrap",
+      description:
+        "Collaborative e-commerce project crafted with HTML, CSS, JavaScript, and Bootstrap",
+      link: "https://github.com/menaehab/e-commerce"
+    }
+  ];
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="max-w-[1240px] mx-auto px-4">
       <div className="topblur"></div>
