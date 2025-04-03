@@ -203,7 +203,7 @@ function Work() {
         </h1>
         <div className="leftblur"></div>
         <CircleGrid
-          className="animation-shape"
+          className="animation-shape hidden md:block"
           position="absolute"
           left="40px"
           top="1200px"
