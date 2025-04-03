@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { CircleGrid } from "react-awesome-shapes";
-import Card from "../../Card";
+import Card from "../../components/Card";
 const ProjectsItems = [
   {
     id: 1,

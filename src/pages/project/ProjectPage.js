@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import Card from "../../Card";
+import Card from "../../components/Card";
 import { Link } from "react-router-dom";
 import { CircleGrid } from "react-awesome-shapes/dist/shapes/circlegrid";
 

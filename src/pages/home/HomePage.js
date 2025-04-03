@@ -5,7 +5,7 @@ import Skills from "./Skills";
 import About from "./About";
 import Contact from "./Contact";
 
-function Home() {
+function HomePage() {
   return (
     <>
       <Hero />
@@ -17,4 +17,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default HomePage;
