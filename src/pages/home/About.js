@@ -58,10 +58,6 @@ function About() {
             in building dynamic web applications.
           </p>
           <p className="mb-4">
-            I previously worked with <strong>Django</strong>, which strengthened
-            and deepened my understanding of web architecture.
-          </p>
-          <p className="mb-4">
             I also have a strong interest in{" "}
             <strong>front-end development</strong>, particularly using{" "}
             <strong>React</strong>.
@@ -107,13 +103,13 @@ function About() {
               lineHeight: "1.8",
               borderRadius: "8px",
               backgroundColor: "#000000",
-              height: "360px"
+              height: "360px",
             }}
             wrapLongLines={true}
             lineProps={{
               style: {
-                color: "#ffffff"
-              }
+                color: "#ffffff",
+              },
             }}
           >
             {text}
