@@ -1,5 +1,3 @@
-import React from "react";
-
 const skills = [
   {
     category: "Languages",
@@ -46,11 +44,11 @@ function Skills() {
         <div class="grid grid-cols-3 gap-4">
           <div className="">
             <div className="max-w-72 border border-gray shadow mb-4">
-              <h3>
-                <h5 className="mb-2 py-3 text-center text-xl font-bold tracking-tight text-white border-b-2 border-secondary">
+              <h5>
+                <h3 className="mb-2 py-3 text-center text-xl font-bold tracking-tight text-white border-b-2 border-secondary">
                   Languages
-                </h5>
-              </h3>
+                </h3>
+              </h5>
               <p className="mb-3 font-normal text-gray-700 px-2 dark:text-gray-400 text-center">
                 <span className="flex flex-wrap justify-center">C C++ PHP</span>
                 <span className="flex flex-wrap justify-center">Python JS</span>
@@ -59,23 +57,21 @@ function Skills() {
           </div>
           <div className="">
             <div className="max-w-72 border border-gray shadow mb-4">
-              <h3>
-                <h5 className="mb-2 py-3 text-center text-xl font-bold tracking-tight text-white border-b-2 border-secondary">
+              <h5>
+                <h3 className="mb-2 py-3 text-center text-xl font-bold tracking-tight text-white border-b-2 border-secondary">
                   Back-End
-                </h5>
-              </h3>
+                </h3>
+              </h5>
               <p className="mb-3 font-normal text-gray-700 px-2 dark:text-gray-400 text-center">
-                <span className="flex flex-wrap justify-center">
-                  Laravel Django
-                </span>
+                <span className="flex flex-wrap justify-center">Laravel</span>
               </p>
             </div>
             <div className="max-w-72 border border-gray shadow mb-4">
-              <h3>
-                <h5 className="mb-2 py-3 text-center text-xl font-bold tracking-tight text-white border-b-2 border-secondary">
+              <h5>
+                <h3 className="mb-2 py-3 text-center text-xl font-bold tracking-tight text-white border-b-2 border-secondary">
                   Front-End
-                </h5>
-              </h3>
+                </h3>
+              </h5>
               <p className="mb-3 font-normal text-gray-700 px-2 dark:text-gray-400 text-center">
                 <span className="flex flex-wrap justify-center">
                   Bootstrap React
@@ -88,24 +84,21 @@ function Skills() {
           </div>
           <div className="">
             <div className="max-w-72 border border-gray shadow mb-4">
-              <h3>
-                <h5 className="mb-2 py-3 text-center text-xl font-bold tracking-tight text-white border-b-2 border-secondary">
+              <h5>
+                <h3 className="mb-2 py-3 text-center text-xl font-bold tracking-tight text-white border-b-2 border-secondary">
                   Databases
-                </h5>
-              </h3>
+                </h3>
+              </h5>
               <p className="mb-3 font-normal text-gray-700 px-2 dark:text-gray-400 text-center">
                 <span className="flex flex-wrap justify-center">MySQl</span>
-                <span className="flex flex-wrap justify-center">
-                  PostgreSQL
-                </span>
               </p>
             </div>
             <div className="max-w-72 border border-gray shadow mb-4">
-              <h3>
-                <h5 className="mb-2 py-3 text-center text-xl font-bold tracking-tight text-white border-b-2 border-secondary">
+              <h5>
+                <h3 className="mb-2 py-3 text-center text-xl font-bold tracking-tight text-white border-b-2 border-secondary">
                   Others
-                </h5>
-              </h3>
+                </h3>
+              </h5>
               <p className="mb-3 font-normal text-gray-700 px-2 dark:text-gray-400 text-center">
                 <span className="flex flex-wrap justify-center">HTML CSS</span>
                 <span className="flex flex-wrap justify-center">EJS</span>

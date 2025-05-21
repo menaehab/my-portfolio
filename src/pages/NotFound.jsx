@@ -1,4 +1,3 @@
-import React from "react";
 import { CircleGrid } from "react-awesome-shapes";
 
 function NotFound() {

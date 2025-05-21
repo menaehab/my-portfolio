@@ -1,4 +1,3 @@
-import React from "react";
 import { IoMail } from "react-icons/io5";
 import { CircleGrid } from "react-awesome-shapes/dist/shapes/circlegrid";
 

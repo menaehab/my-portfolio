@@ -1,19 +1,8 @@
-import React from "react";
 import { CircleGrid } from "react-awesome-shapes";
 import { motion } from "framer-motion";
 import { Link } from "react-scroll";
 
 const fadeContainer = {
-  hidden: { opacity: 0 },
-  show: {
-    opacity: 1,
-    transition: {
-      staggerChildren: 0.2
-    }
-  }
-};
-
-const fadeContainerAnchor = {
   hidden: { opacity: 0 },
   show: {
     opacity: 1,
@@ -29,8 +18,8 @@ const fadeItem = {
 };
 
 const fadeButton = {
-  hidden: { opacity: 0, y: 20 },
-  show: { opacity: 1, y: 0, transition: { duration: 0.5, delay: 0.2 } }
+  hidden: { opacity: 0, y: 0 },
+  show: { opacity: 1, y: 0, transition: { duration: 0.5, delay: 0.5 } }
 };
 function Hero() {
   return (
@@ -83,12 +72,12 @@ function Hero() {
       />
       <div className="rightblur"></div>
       <motion.div
-        variants={fadeContainerAnchor}
+        variants={fadeContainer}
         initial="hidden"
         animate="show"
         className="hero-section"
       >
-        <motion.a
+        <motion.button
           variants={fadeButton}
           className="px-8 py-3 text-white bg-dark border hover:bg-primary border-primary transition duration-300 ease-in-out cursor-pointer"
         >
@@ -101,7 +90,7 @@ function Hero() {
           >
             Contact Me!!
           </Link>
-        </motion.a>
+        </motion.button>
       </motion.div>
     </div>
   );
