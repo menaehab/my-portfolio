@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router-dom";
 
 function Card(props) {
@@ -7,11 +6,11 @@ function Card(props) {
       key={props.id}
       className="max-w-sm border border-gray shadow mb-12 hover:translate-y-[-10px] transition duration-300 ease-in-out"
     >
-      <p className="text-sm border-b-2 text-center border-secondary text-secondary p-2">
+      <p className="text-sm border-b-2 text-center border-[#ABB2BF] text-[#ABB2BF] p-2">
         {props.tech}
       </p>
       <Link to={props.link}>
-        <h5 className="mb-2 py-3 text-center text-2xl font-bold tracking-tight text-white border-b-2 border-secondary">
+        <h5 className="mb-2 py-3 text-center text-2xl font-bold tracking-tight text-white border-b-2 border-[#ABB2BF]">
           {props.name}
         </h5>
       </Link>
@@ -20,7 +19,7 @@ function Card(props) {
       </p>
       <Link
         to={props.link}
-        className="inline-flex items-center px-3 py-2 ml-2 mb-2 text-sm font-medium text-center text-white border-2 border-primary hover:bg-primary transition duration-300 ease-in-out"
+        className="inline-flex items-center px-3 py-2 ml-2 mb-2 text-sm font-medium text-center text-white border-2 border-[#FC0C13] hover:bg-[#FC0C13] transition duration-300 ease-in-out"
       >
         GitHub
         <svg

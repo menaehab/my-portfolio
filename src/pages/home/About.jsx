@@ -1,4 +1,4 @@
-import { React, useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import SyntaxHighlighter from "react-syntax-highlighter";
 import { github } from "react-syntax-highlighter/dist/esm/styles/hljs";
 function About() {
@@ -10,7 +10,7 @@ function About() {
     $availability = true; // full_time || part_time
     $skills = [
         "Languages" => ["C", "C++", "PHP", "JS", "Python"],
-        "Back-End" => ["Laravel", "Django"],
+        "Back-End" => ["Laravel"],
         "Front-End" => ["Bootstrap", "Tailwind", "React"],
     ];
 
@@ -103,13 +103,13 @@ function About() {
               lineHeight: "1.8",
               borderRadius: "8px",
               backgroundColor: "#000000",
-              height: "360px",
+              height: "360px"
             }}
             wrapLongLines={true}
             lineProps={{
               style: {
-                color: "#ffffff",
-              },
+                color: "#ffffff"
+              }
             }}
           >
             {text}
