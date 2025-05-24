@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import Card from "../../components/Card";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 import { CircleGrid } from "react-awesome-shapes/dist/shapes/circlegrid";
 
 function Work() {
@@ -104,7 +105,12 @@ function Work() {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <div className="max-w-[1240px] mx-auto px-4">
+    <motion.div 
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.8 }}
+      className="max-w-[1240px] mx-auto px-4 py-10 lg:py-20"
+    >
       <div className="topblur"></div>
       <CircleGrid
         className="hidden animation-shape md:block"
@@ -204,7 +210,7 @@ function Work() {
           </Link>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

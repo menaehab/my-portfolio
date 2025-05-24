@@ -37,6 +37,10 @@
   filter: blur(300px);
   -webkit-filter: blur(300px);
   z-index: 0;
+  animation-name: blur;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 
 .rightblur {
@@ -50,6 +54,10 @@
   filter: blur(300px);
   -webkit-filter: blur(300px);
   z-index: 0;
+  animation-name: blur;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 .leftblur {
   position: absolute;
@@ -62,6 +70,10 @@
   filter: blur(300px);
   -webkit-filter: blur(300px);
   z-index: 0;
+  animation-name: blur;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 .animation-shape {
   animation-name: transition;
@@ -69,6 +81,18 @@
   animation-iteration-count: infinite;
   animation-direction: alternate;
 }
+
+@keyframes blur {
+  0% {
+    filter: blur(300px);
+    -webkit-filter: blur(300px);
+  }
+  100% {
+    filter: blur(200px);
+    -webkit-filter: blur(200px);
+  }
+}
+
 @keyframes transition {
   0% {
     transform: translateY(0);

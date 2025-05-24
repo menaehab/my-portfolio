@@ -1,12 +1,19 @@
 import { IoMail } from "react-icons/io5";
 import { CircleGrid } from "react-awesome-shapes/dist/shapes/circlegrid";
+import { motion } from "framer-motion";
 
 function Contact() {
   return (
     <>
-      <div className=" rightblur"></div>
-
-      <div className="max-w-[1240px] mx-auto px-4 mb-56 relative" id="contact">
+      <div className="rightblur"></div>
+      <motion.div 
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.8 }}
+        className="max-w-[1240px] mx-auto px-4 mb-56 relative" 
+        id="contact"
+      >
         <div className="mb-20 projects-title">
           <h1 className="flex items-center text-4xl text-white">
             <span className="text-primary">#</span>Contact
@@ -45,7 +52,7 @@ function Contact() {
         <div className="w-20 h-20 border hidden lg:block border-white hover:bg-white transition ease-in-out absolute top-1 right-[500px]"></div>
         <div className="w-16 h-16 border hidden lg:block border-primary absolute right-[580px]"></div>
         <div className="w-12 h-12 border hidden lg:block border-white hover:bg-white transition ease-in-out absolute top-64 right-[180px]"></div>
-      </div>
+      </motion.div>
     </>
   );
 }
