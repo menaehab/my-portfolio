@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { CircleGrid } from "react-awesome-shapes";
+import { motion } from "framer-motion";
 import Card from "../../components/Card";
 const ProjectsItems = [
   {
@@ -29,7 +30,13 @@ const ProjectsItems = [
 ];
 function Projects() {
   return (
-    <div className="max-w-[1240px] mx-auto px-4 mb-20">
+    <motion.div 
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.8 }}
+      className="max-w-[1240px] mx-auto px-4 mb-20"
+    >
       <div className="border-y border-l border-primary w-16 h-28 absolute hidden md:block right-0 top-[110%]"></div>
       <div className="mb-20 projects-title">
         <h1 className="flex items-center text-4xl text-white">
@@ -77,7 +84,7 @@ function Projects() {
           View All
         </Link>
       </div>
-    </div>
+    </motion.div>
   );
 }
 
