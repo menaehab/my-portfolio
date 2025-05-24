@@ -25,7 +25,7 @@ function Hero() {
   return (
     <div className="max-w-[1240px] px-4 mx-auto text-center h-[90vh] flex-col flex items-center justify-center mb-4">
       <CircleGrid
-        className="animation-shape hidden sm:block"
+        className="hidden animation-shape sm:block"
         position="absolute"
         color="#ABB2BF"
         right="30px"
@@ -54,7 +54,7 @@ function Hero() {
         </motion.h1>
         <motion.h4
           variants={fadeItem}
-          className="text-secondary text-lg mb-8 sm:text-2xl"
+          className="mb-8 text-lg text-secondary sm:text-2xl"
         >
           <span className="text-primary">Full-Stack</span> Developer
           specializing in <span className="text-primary">Laravel</span> and{" "}
@@ -79,7 +79,7 @@ function Hero() {
       >
         <motion.button
           variants={fadeButton}
-          className="px-8 py-3 text-white bg-dark border hover:bg-primary border-primary transition duration-300 ease-in-out cursor-pointer"
+          className="px-8 py-3 text-white transition duration-300 ease-in-out border cursor-pointer bg-dark hover:bg-primary border-primary"
         >
           <Link
             to="contact"
