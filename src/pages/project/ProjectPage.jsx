@@ -107,7 +107,7 @@ function Work() {
     <div className="max-w-[1240px] mx-auto px-4">
       <div className="topblur"></div>
       <CircleGrid
-        className="animation-shape hidden md:block"
+        className="hidden animation-shape md:block"
         position="absolute"
         color="#ABB2BF"
         right="30px"
@@ -116,17 +116,17 @@ function Work() {
         zIndex={2}
       />
       <div className="mt-24 mb-32">
-        <h1 className="text-white text-4xl flex items-center ">
+        <h1 className="flex items-center text-4xl text-white ">
           <span className="text-[#FC0C13]">/</span>projects
         </h1>
         <p className="text-[#ABB2BF] mt-4">List of my projects</p>
       </div>
       <div className="my-16">
-        <div className="text-white text-4xl">
+        <div className="text-4xl text-white">
           <span className="text-[#FC0C13]">#</span>Completed-projects
         </div>
       </div>
-      <div className="flex flex-wrap gap-4 justify-center ">
+      <div className="flex flex-wrap justify-center gap-4 ">
         <div className="border-y border-l border-[#FC0C13] w-16 h-28 absolute hidden md:block right-0 top-[150%]"></div>
         <div className="rightblur"></div>
         {completedProjects.map((item) => (
@@ -141,11 +141,11 @@ function Work() {
         ))}
       </div>
       <div className="my-16">
-        <div className="text-white text-4xl">
+        <div className="text-4xl text-white">
           <span className="text-[#FC0C13]">#</span>small-projects
         </div>
       </div>
-      <div className="flex flex-wrap gap-4 justify-center ">
+      <div className="flex flex-wrap justify-center gap-4 ">
         <div className="leftblur"></div>
         {smallProjects.map((item) => (
           <Card
@@ -160,12 +160,12 @@ function Work() {
       </div>
       <div className="border border-[#FC0C13] w-16 h-28 absolute hidden md:block red-sqaure top-[80%] left-[-10px]"></div>
       <div className="my-16">
-        <div className="text-white text-4xl">
+        <div className="text-4xl text-white">
           <span className="text-[#FC0C13]">#</span>teamwork-projects
         </div>
       </div>
       <div className="border-y border-l border-[#FC0C13] w-16 h-28 absolute hidden md:block right-0 top-[250%]"></div>
-      <div className="flex flex-wrap gap-4 justify-center ">
+      <div className="flex flex-wrap justify-center gap-4 ">
         <div className="border border-[#FC0C13] w-16 h-28 absolute hidden md:block red-sqaure top-[210%] left-[-10px]"></div>
         <div className="rightblur"></div>
         {teamProjects.map((item) => (
@@ -180,14 +180,14 @@ function Work() {
         ))}
       </div>
       <div className="my-32">
-        <h1 className="text-white text-4xl flex justify-center items-center mb-8">
+        <h1 className="flex items-center justify-center mb-8 text-4xl text-white">
           <hr className="w-[20%] h-1 mr-4 border-3 border-[#FC0C13] hidden md:block" />
           Explore more of my projects
           <hr className="w-[20%] h-1 ml-4 border-3 border-[#FC0C13] hidden md:block" />
         </h1>
         <div className="leftblur"></div>
         <CircleGrid
-          className="animation-shape hidden md:block"
+          className="hidden animation-shape md:block"
           position="absolute"
           left="40px"
           top="1100px"

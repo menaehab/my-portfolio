@@ -31,10 +31,10 @@ function Projects() {
   return (
     <div className="max-w-[1240px] mx-auto px-4 mb-20">
       <div className="border-y border-l border-primary w-16 h-28 absolute hidden md:block right-0 top-[110%]"></div>
-      <div className="projects-title mb-20">
-        <h1 className="text-white text-4xl flex items-center">
+      <div className="mb-20 projects-title">
+        <h1 className="flex items-center text-4xl text-white">
           <span className="text-primary">#</span>Projects
-          <hr className="w-1/2 h-1 ml-4 border-3  border-primary hidden md:block" />
+          <hr className="hidden w-1/2 h-1 ml-4 border-3 border-primary md:block" />
         </h1>
       </div>
       <div className="leftblur"></div>
@@ -52,7 +52,7 @@ function Projects() {
         ))}
       </div>
       <CircleGrid
-        className="animation-shape hidden md:block"
+        className="hidden animation-shape md:block"
         position="absolute"
         color="#ABB2BF"
         right="30px"
@@ -61,7 +61,7 @@ function Projects() {
         zIndex={2}
       />
       <CircleGrid
-        className="animation-shape hidden min1650:block"
+        className="hidden animation-shape min1650:block"
         position="absolute"
         color="#ABB2BF"
         right="30px"
@@ -72,7 +72,7 @@ function Projects() {
       <div className="flex justify-center">
         <Link
           to="/project"
-          className="text-white px-6 py-3 border border-primary hover:bg-primary transition duration-300 ease-in-out"
+          className="px-6 py-3 text-white transition duration-300 ease-in-out border border-primary hover:bg-primary"
         >
           View All
         </Link>

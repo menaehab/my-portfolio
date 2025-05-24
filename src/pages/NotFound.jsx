@@ -4,7 +4,7 @@ function NotFound() {
   return (
     <div className="max-w-[1240px] px-4 mx-auto text-center h-[90vh] flex-col flex items-center justify-center mb-4">
       <CircleGrid
-        className="animation-shape hidden sm:block"
+        className="hidden animation-shape sm:block"
         position="absolute"
         color="#ABB2BF"
         right="30px"

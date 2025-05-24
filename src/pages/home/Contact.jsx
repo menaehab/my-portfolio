@@ -7,23 +7,23 @@ function Contact() {
       <div className=" rightblur"></div>
 
       <div className="max-w-[1240px] mx-auto px-4 mb-56 relative" id="contact">
-        <div className="projects-title mb-20">
-          <h1 className="text-white text-4xl flex items-center">
+        <div className="mb-20 projects-title">
+          <h1 className="flex items-center text-4xl text-white">
             <span className="text-primary">#</span>Contact
             <hr className="w-[20%] h-1 ml-4 border-3 border-primary" />
           </h1>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <p className="text-secondary text-lg">
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
+          <p className="text-lg text-secondary">
             I’m interested in freelance opportunities. However, if you have
             other requests or questions, don’t hesitate to contact me.
           </p>
-          <div className="border border-secondary max-w-sm mx-auto p-4">
-            <h2 className="text-xl text-center text-white mb-3">
+          <div className="max-w-sm p-4 mx-auto border border-secondary">
+            <h2 className="mb-3 text-xl text-center text-white">
               Message me here
             </h2>
-            <div className="flex justify-center items-center">
-              <IoMail className="text-3xl text-secondary mr-2" />
+            <div className="flex items-center justify-center">
+              <IoMail className="mr-2 text-3xl text-secondary" />
               <a
                 href="mailto:menaehab7996@gmail.com"
                 className="text-secondary"
@@ -34,7 +34,7 @@ function Contact() {
           </div>
         </div>
         <CircleGrid
-          className="animation-shape hidden md:block"
+          className="hidden animation-shape md:block"
           position="absolute"
           color="#ABB2BF"
           right="40px"
