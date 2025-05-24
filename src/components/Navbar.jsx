@@ -3,7 +3,7 @@ import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import { FaGithub, FaLinkedin, FaFacebook } from "react-icons/fa";
 import { Link as RouterLink, useNavigate, useLocation } from "react-router-dom";
 import { scroller } from "react-scroll";
-
+import { motion } from "framer-motion";
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const navigate = useNavigate();
@@ -39,7 +39,13 @@ const Navbar = () => {
   ];
 
   return (
-    <div className="bg-[#282C33] flex justify-between items-center h-20 max-w-[1240px] mx-auto px-4 text-white">
+    <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.8 }}
+      className="bg-[#282C33] flex justify-between items-center h-20 max-w-[1240px] mx-auto px-4 text-white"
+    >
       <h1 className="w-full text-2xl font-bold text-white">MENA</h1>
 
       {/* Desktop Navigation */}
@@ -154,7 +160,7 @@ const Navbar = () => {
           <FaFacebook />
         </a>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

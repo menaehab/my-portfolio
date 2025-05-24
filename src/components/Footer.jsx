@@ -1,21 +1,27 @@
 import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
-
+import { motion } from "framer-motion";
 function Footer() {
   return (
-    <div className="border-t-2 border-[#ABB2BF]">
-      <div className="container mx-auto px-10 md:px-24 py-8">
-        <div className="flex justify-between items-center">
+    <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.8 }}
+      className="border-t-2 border-[#ABB2BF]"
+    >
+      <div className="container px-10 py-8 mx-auto md:px-24">
+        <div className="flex items-center justify-between">
           <div className="">
-            <h3 className="text-2xl text-white font-bold mb-4">MENA</h3>
+            <h3 className="mb-4 text-2xl font-bold text-white">MENA</h3>
             <p className="text-[#ABB2BF] text-lg">Full-Stack Developer</p>
           </div>
           <div className="">
-            <h3 className="text-white font-bold text-center mb-4 text-xl">
+            <h3 className="mb-4 text-xl font-bold text-center text-white">
               Media
             </h3>
             <div className="text-[#ABB2BF] flex justify-center gap-4 text-2xl ">
               <a
-                className="hover:text-white transition duration-300 ease-in-out"
+                className="transition duration-300 ease-in-out hover:text-white"
                 href="https://github.com/menaehab"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -23,7 +29,7 @@ function Footer() {
                 <FaGithub />
               </a>
               <a
-                className="hover:text-white transition duration-300 ease-in-out"
+                className="transition duration-300 ease-in-out hover:text-white"
                 href="https://www.linkedin.com/in/mena-ehab-262a4b290/"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -31,7 +37,7 @@ function Footer() {
                 <FaLinkedin />
               </a>
               <a
-                className="hover:text-white transition duration-300 ease-in-out"
+                className="transition duration-300 ease-in-out hover:text-white"
                 href="https://www.facebook.com/mena.ehab.9026/"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -45,7 +51,7 @@ function Footer() {
           Copyright 2025 MENA. All rights reserved.
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 
