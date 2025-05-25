@@ -5,11 +5,13 @@ import "./App.css";
 import Navbar from "./components/Navbar";
 import ProjectPage from "./pages/project/ProjectPage";
 import NotFound from "./pages/NotFound";
+import CursorFollower from "./components/CursorFollower";
 function App() {
   return (
     <div className="app bg-dark">
       <BrowserRouter>
         <Navbar />
+        <CursorFollower />
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/project" element={<ProjectPage />} />
