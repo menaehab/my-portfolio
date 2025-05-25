@@ -6,18 +6,25 @@ function Contact() {
   return (
     <>
       <div className="rightblur"></div>
-      <motion.div 
+      <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
         transition={{ duration: 0.8 }}
-        className="max-w-[1240px] mx-auto px-4 mb-56 relative" 
+        className="max-w-[1240px] mx-auto px-4 mb-56 relative"
         id="contact"
       >
         <div className="mb-20 projects-title">
           <h1 className="flex items-center text-4xl text-white">
             <span className="text-primary">#</span>Contact
-            <hr className="w-[20%] h-1 ml-4 border-3 border-primary" />
+            <motion.div
+              initial={{ width: 0 }}
+              whileInView={{ width: "20%" }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8, ease: "easeOut" }}
+              className="h-[1px] ml-4 bg-primary hidden md:block"
+              style={{ minWidth: 0 }}
+            />
           </h1>
         </div>
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2">

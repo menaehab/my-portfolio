@@ -30,7 +30,7 @@ const ProjectsItems = [
 ];
 function Projects() {
   return (
-    <motion.div 
+    <motion.div
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       viewport={{ once: true }}
@@ -41,7 +41,14 @@ function Projects() {
       <div className="mb-20 projects-title">
         <h1 className="flex items-center text-4xl text-white">
           <span className="text-primary">#</span>Projects
-          <hr className="hidden w-1/2 h-1 ml-4 border-3 border-primary md:block" />
+          <motion.div
+            initial={{ width: 0 }}
+            whileInView={{ width: "50%" }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            className="h-[1px] ml-4 bg-primary hidden md:block"
+            style={{ minWidth: 0 }}
+          />
         </h1>
       </div>
       <div className="leftblur"></div>
