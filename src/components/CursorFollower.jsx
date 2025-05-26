@@ -14,6 +14,7 @@ export default function CursorFollower() {
 
   return (
     <motion.div
+      className="hidden sm:block"
       animate={{ x: position.x, y: position.y }}
       transition={{ type: "spring", stiffness: 300, damping: 30 }}
       style={{
